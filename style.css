@@ -1,0 +1,49 @@
+body {
+  font-family: cursive;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  width: fit-content;
+  justify-content: center;
+  margin: 2rem auto;
+}
+#gif-container {
+  border: 2rem solid black;
+}
+#gif {
+  width: 60vw;
+}
+#no-result {
+  font-size: 2rem;
+  text-align: center;
+}
+#attribution-image {
+  width: 20vw;
+}
+
+@media only screen and (max-width: 768px) {
+  #attribution-image {
+    width: 30vw;
+  }
+  #gif {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #attribution-image {
+    width: 50vw;
+  }
+  #gif {
+    width: calc(90vw - 2rem);
+  }
+}
